@@ -11,10 +11,12 @@ import {
 
 // Admin Imports
 import MainDashboard from 'views/admin/default';
-import NFTMarketplace from 'views/admin/marketplace';
-import Profile from 'views/admin/profile';
-import DataTables from 'views/admin/dataTables';
-import RTL from 'views/admin/rtl';
+import MaterialTopics from 'views/admin/materialTopics';
+import Entities from 'views/admin/entities';
+import Units from 'views/admin/units';
+import Metrics from 'views/admin/metrics';
+import Targets from 'views/admin/targets';
+import Goals from 'views/admin/goals';
 
 // Auth Imports
 import SignInCentered from 'views/auth/signIn';
@@ -29,33 +31,46 @@ const routes = [
     component: MainDashboard,
   },
   {
-    name: 'NFT Marketplace',
-    layout: '/admin',
-    path: '/nft-marketplace',
-    icon: (
-      <Icon
-        as={MdOutlineShoppingCart}
-        width="20px"
-        height="20px"
-        color="inherit"
-      />
-    ),
-    component: NFTMarketplace,
-    secondary: true,
-  },
-  {
-    name: 'Data Tables',
+    name: 'Material Topics',
     layout: '/admin',
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
-    path: '/data-tables',
-    component: DataTables,
+    path: '/material-topics',
+    component: MaterialTopics,
   },
   {
-    name: 'Profile',
+    name: 'Units',
     layout: '/admin',
-    path: '/profile',
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/units',
+    component: Units,
+  },
+  {
+    name: 'Entities',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/entities',
+    component: Entities,
+  },
+  {
+    name: 'Metrics ',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/metrics',
+    component: Metrics,
+  },
+  {
+    name: 'Targets',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/targets',
+    component: Targets,
+  },
+  {
+    name: 'Goals',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/goals',
+    component: Goals,
   },
   {
     name: 'Sign In',
@@ -70,13 +85,6 @@ const routes = [
     path: '/sign-up',
     icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
     component: SignUpCentered,
-  },
-  {
-    name: 'RTL Admin',
-    layout: '/rtl',
-    path: '/rtl-default',
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
-    component: RTL,
   },
 ];
 
