@@ -23,16 +23,16 @@
 // Chakra imports
 import { Box, SimpleGrid } from "@chakra-ui/react";
 
-import TargetsTable from "views/admin/targets/components/TargetsTable";
-import {columnsData,} from "views/admin/targets/variables/columnsData";
-import tableData from "views/admin/targets/variables/tableData.json";
+import TestPageTable from "views/admin/testPage/components/TestPageTable";
+import {columnsData,} from "views/admin/testPage/variables/columnsData";
+import tableData from "views/admin/testPage/variables/tableData.json";
 import React from "react";
 
 export default function Settings() {
   // Chakra Color Mode
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
-        <TargetsTable
+        <TestPageTable
           columnsData={columnsData}
           tableData={tableData}
         />

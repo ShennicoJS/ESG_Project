@@ -4,16 +4,16 @@ export const columnsData = [
     accessor: "name",
 },
 {
-    Header: "CLASSIFICATION",
-    accessor: "classification",
+    Header: "START DATE",
+    accessor: "startDate",
 },
 {
-    Header: "IMPORTANCE TO BUSINESS",
-    accessor: "businessImportance",
+    Header: "END DATE",
+    accessor: "endDate",
 },
 {
-    Header: "IMPORTANCE TO STAKEHOLDERS",
-    accessor: "stakeholderImportance",
+    Header: "METRIC",
+    accessor: "metric",
 },
 ];
   

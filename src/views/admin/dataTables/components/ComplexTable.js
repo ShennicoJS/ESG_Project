@@ -22,6 +22,7 @@ import {
 // Custom components
 import Card from "components/card/Card";
 import Menu from "components/menu/MainMenu";
+import Completed from "components/progressBar/completed"
 
 // Assets
 import { MdCheckCircle, MdCancel, MdOutlineError } from "react-icons/md";
@@ -67,7 +68,8 @@ export default function ColumnsTable(props) {
           lineHeight='100%'>
           Complex Table
         </Text>
-        <Menu />
+        <Menu/>
+        <Completed/>
       </Flex>
       <Table {...getTableProps()} variant='simple' color='gray.500' mb='24px'>
         <Thead>

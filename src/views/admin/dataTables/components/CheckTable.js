@@ -21,6 +21,7 @@ import {
 // Custom components
 import Card from "components/card/Card";
 import Menu from "components/menu/MainMenu";
+import CompletedBar from "components/progressBar/completed";
 export default function CheckTable(props) {
   const { columnsData, tableData } = props;
 
@@ -63,6 +64,7 @@ export default function CheckTable(props) {
           lineHeight='100%'>
           Check Table
         </Text>
+        <CompletedBar/>
         <Menu />
       </Flex>
       <Table {...getTableProps()} variant='simple' color='gray.500' mb='24px'>

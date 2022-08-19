@@ -17,6 +17,8 @@ import Units from 'views/admin/units';
 import Metrics from 'views/admin/metrics';
 import Targets from 'views/admin/targets';
 import Goals from 'views/admin/goals';
+import TestPage from 'views/admin/testPage';
+import DataTables from 'views/admin/dataTables';
 
 // Auth Imports
 import SignInCentered from 'views/auth/signIn';
@@ -70,7 +72,14 @@ const routes = [
     layout: '/admin',
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: '/goals',
-    component: Goals,
+    component: DataTables,
+  },
+  {
+    name: 'Some Random Name',
+    layout: '/admin',
+    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
+    path: '/testPage',
+    component: TestPage,
   },
   {
     name: 'Sign In',
